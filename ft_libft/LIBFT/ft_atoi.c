@@ -101,8 +101,8 @@ int main(void)
 	printf("%d\n", ft_atoi("--2147483648"));
 	printf("%d\n", atoi("--2147483648"));
 	printf("--------\n");
-	printf("%d\n", ft_atoi("2147483647"));
-	printf("%d\n", atoi("2147483647"));
+	printf("%d\n", ft_atoi("++2147483647"));
+	printf("%d\n", atoi("++2147483647"));
 	printf("--------\n");
 
 	printf("%d\n", ft_atoi("tutorialspoint.com"));
@@ -119,8 +119,8 @@ int main(void)
 	printf("%d\n", atoi("  ---+--+--+6451-1ab567"));
 	printf("--------\n");
 	
-	printf("%i\n", ft_atoi("-2147483648"));
-	printf("%d\n", atoi("-2147483648"));
+	printf("%i\n", ft_atoi("--+-2147483648"));
+	printf("%d\n", atoi("--+-2147483648"));
 	printf("--------\n");
 
     printf("%i\n", ft_atoi("    ----+-98ativo23"));
