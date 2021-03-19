@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/18 23:36:09 by hdal-mol          #+#    #+#             */
+/*   Updated: 2021/03/19 18:15:13 by hdal-mol         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 /*
 ** LIBRARY: <string.h>
 ** SYNOPSIS: size-bounded string copying
@@ -17,23 +30,7 @@
 **	terminated string src to dst, NUL-terminating the result.
 */
 
-
-/*
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
-{
-	unsigned int i;
-
-	i = 0;
-	while ((src[i] != '\0') && (i < size))
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (size);
-}
-*/
-#include <unistd.h>
+#include "libft.h"
 
 int		ft_strlen(char *str)
 {
@@ -48,24 +45,24 @@ int		ft_strlen(char *str)
 	return (i);
 }
 
-int	ft_strlcpy(char *dst, const char *src, int size)
+int	ft_strlcpy(char *dest, const char *src, int size)
 {
 	char			current_char;
-	unsigned int	iterator;
+	unsigned int	i;
 
 	if (src == 0)
 		return (0);
 	if (size > 0)
 	{
-		iterator = 0;
-		current_char = src[iterator];
-		while (current_char != '\0' && iterator < (size - 1))
+		i = 0;
+		current_char = src[i];
+		while (current_char != '\0' && i < (size - 1))
 		{
-			dst[iterator] = current_char;
-			iterator++;
-			current_char = src[iterator];
+			dest[i] = current_char;
+			i++;
+			current_char = src[i];
 		}
-		dst[iterator] = '\0';
+		dest[i] = '\0';
 	}
 	return (ft_strlen(src));
 }

@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/18 23:09:16 by hdal-mol          #+#    #+#             */
+/*   Updated: 2021/03/18 23:11:04 by hdal-mol         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 /*
 ** LIBRARY: <ctype.h>
 ** SYNOPSIS: printing character test (space character inclusive)
@@ -6,6 +19,7 @@
 ** 		The isprint() function tests for any printing character, including space
 **	(' ').
 */
+#include "libft.h"
 
 int ft_isprint(int c)
 {

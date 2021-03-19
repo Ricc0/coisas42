@@ -1,4 +1,28 @@
-char   strlen(char *n)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/18 23:35:40 by hdal-mol          #+#    #+#             */
+/*   Updated: 2021/03/19 18:15:10 by hdal-mol         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+/*
+** Concatenates src to destination, writing size bytes at most.
+** Returns initial length of dest plus length of src for truncation detection.
+*/
+#include <stddef.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include "libft.h"
+
+
+char   ft_strlen(const char *n)
 {
     int     cont;
  
@@ -10,31 +34,28 @@ char   strlen(char *n)
     return (cont);
 }
  
-char    *ft_strlcat(char *dest, char *src, unsigned int nb)
+size_t	ft_strlcat(char *dest, const char *src, size_t nb)
 {
-    int keep_tam;
-    int i;
- 
-	if(nb <= strlen(dest))
-		return(nb + strlen(src));
-    i = 0;
-    keep_tam = strlen(dest);
-    while (src[i] != '\0' && nb > 0)
-    {
-        dest[keep_tam] = src[i];
-        i++;
-        keep_tam++;
-        nb--;
-    }
-    dest[keep_tam] = '\0';
-    return (dest);
+	size_t dest_leng;
+	size_t i;
+
+	dest_leng = ft_strlen(dest);
+	i = 0;
+	
+	if (nb <= dest_leng)
+		return (nb + ft_strlen(src));
+	while (src[i] != '\0' && dest_leng + 1 < nb)
+	{
+		dest[dest_leng] = src[i];
+		dest_leng++;
+		i++;
+	}
+	dest[dest_leng] = '\0';
+	return (ft_strlen(dest) + ft_strlen(&src[i]));
 }
- 
 
  
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+
 
 int main(void)
 {

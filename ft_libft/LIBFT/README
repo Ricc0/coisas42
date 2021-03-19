@@ -1,0 +1,5 @@
+CASTING = todos os arquivos voids * não podem ter outra forma, por exemplo malloc(int), então forçamos eles dessa maneira
+
+(str *)malloc
+
+NULL = !FUNÇÃO

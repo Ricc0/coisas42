@@ -1,3 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/18 23:09:58 by hdal-mol          #+#    #+#             */
+/*   Updated: 2021/03/19 17:46:08 by hdal-mol         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+ #include "libft.h"
+
  //PRINTAR NUMEROS IDEPENDENTE DO Q TIVER NA FRENTE
  /*
 int         white_space(char c);
@@ -62,11 +76,11 @@ int            main(void)
 int		ft_atoi(const char *str)
 {
 	int i;
-	int s;
+	int p_n;
 	int res;
 
 	i = 0;
-	s = 1;
+	p_n = 1;
 	res = 0;
 	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' ||
 			str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
@@ -74,7 +88,7 @@ int		ft_atoi(const char *str)
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
-			s = -1;
+			p_n = -1;
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
@@ -82,7 +96,7 @@ int		ft_atoi(const char *str)
 		res = (res * 10) + (str[i] - '0');
 		i++;
 	}
-	return (res * s);
+	return (res * p_n);
 }
 
 #include <stdio.h>
