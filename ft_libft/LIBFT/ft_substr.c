@@ -6,7 +6,7 @@
 /*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:42:10 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 18:15:37 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/19 20:16:51 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,31 +50,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		nova_str[i++] = s[str++];
 	nova_str[i] = '\0';
 	return (nova_str);
-}
-
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
-
-int main(void)
-{
-	char original_string[100] = "If money can't buy happiness then why is it so fabulous?";
-
-	printf("%s\n", ft_substr(original_string, 1, 20));
-	printf("----------\n");
-
-	printf("%s\n", ft_substr(original_string, 1, 2));
-	printf("----------\n");
-
-	printf("%s\n", ft_substr(original_string, 100, 123));
-	printf("----------\n");
-
-	printf("%s\n", ft_substr(original_string, 0, 0));
-	printf("----------\n");
-
-	printf("%s\n", ft_substr(NULL, 2, 4));
-	printf("----------\n");
-
-	return (0);
 }

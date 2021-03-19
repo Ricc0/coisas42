@@ -6,7 +6,7 @@
 /*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:35:03 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 18:15:01 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/19 20:12:20 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,39 +56,4 @@ char *ft_strjoin(char const *s1, char const *s2)
     }
     nova_string = '\0';
     return(nova_string);
-}
-
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
-
-int main(void)
-{
-
-	printf("%s\n", ft_strjoin("I like", " turtles!DSA@"));
-	printf("----------\n");
-
-	printf("%s\n", ft_strjoin("sda d e", " ds!da@ ds"));
-	printf("----------\n");
-
-	printf("%s\n", ft_strjoin("d2", " turtles!1s|sda|@"));
-	printf("----------\n");
-
-	printf("%s\n", ft_strjoin("If money can't buy happiness", " then why is it so fabulous?"));
-	printf("----------\n");
-
-	printf("%s\n", ft_strjoin("I like", " turtles\0!DSA@"));
-	printf("----------\n");
-
-	printf("%s\n", ft_strjoin("I like", ""));
-	printf("----------\n");
-
-	printf("%s\n", ft_strjoin("", " turtles\0!DSA@"));
-	printf("----------\n");
-
-	printf("%s\n", ft_strjoin("", ""));
-	printf("----------\n");
-
-	return (0);
 }

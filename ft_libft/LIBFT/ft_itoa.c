@@ -6,7 +6,7 @@
 /*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:09:07 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/18 23:11:12 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/19 20:09:06 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,28 +69,3 @@ char *ft_itoa(int n)
     escrever_os_digitos(string,digitos_contados,numero,is_negativo);
     return(string);
 }   
-
-
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
-
-int main(void)
-{
-
-	printf("%s|\n", ft_itoa(-2312));
-	printf("----------\n");
-	printf("%s|\n", ft_itoa(2312));
-	printf("----------\n");
-	printf("%s|\n", ft_itoa(-231212121));
-	printf("----------\n");
-	printf("%s|\n", ft_itoa(122312));
-	printf("----------\n");
-	printf("%s|\n", ft_itoa(0));
-	printf("----------\n");
-	printf("%s|\n", ft_itoa(42));
-	printf("----------\n");
-
-	return (0);
-}

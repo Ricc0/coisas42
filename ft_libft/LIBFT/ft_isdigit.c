@@ -6,10 +6,9 @@
 /*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:09:21 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/18 23:11:01 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/19 20:08:40 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 /*
 ** Checks if c is an ASCII number.
@@ -23,4 +22,3 @@ int ft_isdigit(int c)
         return(1); 
     return(0);
 }
-

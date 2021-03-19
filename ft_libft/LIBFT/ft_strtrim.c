@@ -6,13 +6,10 @@
 /*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:41:56 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 18:15:34 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/19 20:16:41 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <stddef.h>//possibilitar size_t
-#include <stdlib.h>// possibilitar malloc
 #include "libft.h"
 
 char    *ft_strchr(const char *str, int c)
@@ -64,39 +61,4 @@ char *ft_strtrim(char const *s1, char const *set)
     while(i && ft_strchr(set, s1[i]))
         i--;
     return(ft_substr(s1,0,i+1));
-}
-
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
-
-int main(void)
-{
-
-	printf("%s\n", ft_strtrim("If money can't buy happiness", " If "));
-	printf("----------\n");
-
-	printf("%s\n", ft_strtrim(" - If money can't buy happiness", " - "));
-	printf("----------\n");
-
-	printf("%s\n", ft_strtrim("If money can't buy happiness - ", " - "));
-	printf("----------\n");
-
-	printf("%s\n", ft_strtrim(" - If money can't buy happiness - ", " - "));
-	printf("----------\n");
-
-	printf("%s\n", ft_strtrim("If money can't buy happiness", "If money"));
-	printf("----------\n");
-
-	printf("%s\n", ft_strtrim("If money can't buy happiness", "If mone"));
-	printf("----------\n");
-
-	printf("%s\n", ft_strtrim("If money can't buy happiness", "If money "));
-	printf("----------\n");
-
-	printf("%s\n", ft_strtrim("If money can't buy happiness", "y happiness"));
-	printf("----------\n");
-
-	return (0);
 }

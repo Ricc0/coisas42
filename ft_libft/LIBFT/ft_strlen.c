@@ -6,13 +6,12 @@
 /*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:36:52 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 18:15:17 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/19 20:13:10 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include <unistd.h>
-#include "libft.h"
+#include"libft.h"
 
 int		ft_strlen(char *str)
 {

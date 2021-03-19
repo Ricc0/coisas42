@@ -6,7 +6,7 @@
 /*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:39:55 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 18:15:27 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/19 20:15:03 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,8 @@
 **	searched.  Characters that appear after a `\0' character are not
 **	searched.
 */
-#include <stddef.h>//possibilitar size_t
-#include <stdlib.h>// possibilitar malloc
-#include "libft.h"
 
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -47,47 +45,4 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <string.h>
-
-
-    int main(void)
-{
-
-	const char *hay1 = "Foo Bar Baz";
-	const char *needle1 = "Bar";
-
-	char *hay2 = "la da\ndoo a da\nnow here comes the stack\nok there it was.\n stackdummy";
-	char *needle2 = "stackdummy";
-
-	//printf("%s\n", strnstr(hay1, needle1, 4));
-	printf("%s\n", ft_strnstr(hay1, needle1, 4));
-	printf("---------------\n");
-
-	//printf("%s\n", strnstr(hay1, needle1, 10));
-	printf("%s\n", ft_strnstr(hay1, needle1, 10));
-	printf("---------------\n");
-
-	//printf("%s\n", strnstr(hay1, needle1, 0));
-	printf("%s\n", ft_strnstr(hay1, needle1, 0));
-	printf("---------------\n");
-
-	//printf("%s\n", strnstr(hay2, needle2, 10));
-	printf("%s\n", ft_strnstr(hay2, needle2, 10));
-	printf("---------------\n");
-
-	//printf("%s\n", strnstr(hay2, needle2, 70));
-	printf("%s\n", ft_strnstr(hay2, needle2, 70));
-	printf("---------------\n");
-
-	
-	return 0;
-
-}
-
-
 
