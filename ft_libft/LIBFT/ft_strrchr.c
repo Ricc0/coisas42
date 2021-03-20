@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
 ** Returns last occurence of char c in string or NULL.
 */
@@ -22,9 +21,9 @@ char	*ft_strchr(const char *str, int c)
 	while (*str != '\0' && c != *str)
 		str++;
 	if (c == *str)
-    {
-		return ((char * )str);
-    }
+	{
+		return ((char *)str);
+	}
 	return (0);
 }
 
@@ -34,12 +33,11 @@ char	*ft_strrchr(const char *s, int c)
 
 	s_end = ft_strchr(s, '\0');
 	while (*s_end != (char)c)
-    {
+	{
 		if (s_end-- == s)
-        {
+		{
 			return (NULL);
-        }
-
-	return (char *)s_end;
-    }
+		}
+		return (char *)s_end;
+	}
 }

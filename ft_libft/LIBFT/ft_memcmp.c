@@ -10,13 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
 ** Compares n bytes after s1 with the n bytes after s2.
 ** If any are different it returns the difference.
 */
 #include "libft.h"
-
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

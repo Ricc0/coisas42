@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
 ** LIBRARY: <string.h>
 ** SYNOPSIS: locate a substring in a string (size-bounded)
@@ -45,4 +44,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-

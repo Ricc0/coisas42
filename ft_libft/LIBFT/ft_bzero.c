@@ -10,23 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-/*
-Apaga o conteudo até LENG bytes de memoria
-começando no local apontado pela STR,
- escrevendo zeros (\0) nesse local
-*/
 #include "libft.h"
 
-void        ft_bzero(void *str, size_t leng)
+void	ft_bzero(void *str, size_t leng)
 {
-    int i;
-    
-    i = 0;
+	int i;
 
-    while( i < leng)
-    {
-        ((char *)str) [i] = '\0';
-        i++;
-    }
+	i = 0;
+	while (i < leng)
+	{
+		((char *)str)[i] = '\0';
+		i++;
+	}
 }

@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
 ** LIBRARY: <string.h>
 ** SYNOPSIS: size-bounded string copying
@@ -45,7 +44,7 @@ int		ft_strlen(char *str)
 	return (i);
 }
 
-int	ft_strlcpy(char *dest, const char *src, int size)
+int		ft_strlcpy(char *dest, const char *src, int size)
 {
 	char			current_char;
 	unsigned int	i;

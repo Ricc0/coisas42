@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
 ** LIBRARY: N/A
 ** SYNOPSIS: concatenate two strings into a new string (with malloc)
@@ -19,10 +18,9 @@
 ** 		Allocates (with malloc(3)) and returns a new string, which is the
 **	result of the concatenation of ’s1’ and ’s2’.
 */
-
 #include "libft.h"
 
-int		ft_strlen( char *str)
+int		ft_strlen(char *str)
 {
 	int	i;
 
@@ -34,26 +32,26 @@ int		ft_strlen( char *str)
 	return (i);
 }
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-    char *nova_string;
-    size_t i;
-    size_t j;
+	char	*nova_string;
+	size_t	i;
+	size_t	j;
 
-    i = 0;
-    j = 0;
-
-    if(!s1 || !s2 || !(nova_string = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1)))
-        return(0);
-    while(s1[i] != '\0')
-    {
-        nova_string[i] = s1[i];
-        i++;
-    }
-    while( s2[j] != '\0')
-    {
-        nova_string[i++] = s2[j++];
-    }
-    nova_string = '\0';
-    return(nova_string);
+	i = 0;
+	j = 0;
+	if (!s1 || !s2 ||
+		!(nova_string = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1)))
+		return (0);
+	while (s1[i] != '\0')
+	{
+		nova_string[i] = s1[i];
+		i++;
+	}
+	while (s2[j] != '\0')
+	{
+		nova_string[i++] = s2[j++];
+	}
+	nova_string = '\0';
+	return (nova_string);
 }

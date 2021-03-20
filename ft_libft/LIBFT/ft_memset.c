@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
 ** enche a memoria com um byte constante
 ** Library: <string.h>
@@ -18,28 +17,16 @@
 ** com o byte constante c.
 ** Returns a pointer to the memory area s.
 */
-
 #include "libft.h"
 
-
-void        *ft_memset(void *str, int c, size_t leng)
+void	*ft_memset(void *str, int c, size_t leng)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while( i < leng)
-    {
-        ((char *)str)[i] = c;
-        //str[i] = c;
-        i++;
-    }
-
-}
-
-int main(void)
-{
-    char palavra[10] = "Henricco";
-    ft_memset(palavra,'+',7);
-
-    printf("%s", palavra);
+	i = 0;
+	while (i < leng)
+	{
+		((char *)str)[i] = c;
+		i++;
+	}
 }

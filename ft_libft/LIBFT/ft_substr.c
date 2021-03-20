@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
 ** LIBRARY: N/A
 ** SYNOPSIS: extract substring from string
@@ -20,8 +19,6 @@
 **	The substring begins at index ’start’ and is of maximum size ’len’.
 */
 
-#include <stddef.h>//possibilitar size_t
-#include <stdlib.h>// possibilitar malloc
 #include "libft.h"
 
 int		ft_strlen(char *str)

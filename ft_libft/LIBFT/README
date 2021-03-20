@@ -3,3 +3,6 @@ CASTING = todos os arquivos voids * não podem ter outra forma, por exemplo mall
 (str *)malloc
 
 NULL = !FUNÇÃO
+
+
+	nova_string = (char *)malloc(tamanho_original); //= malloc((original_size) * sizeof(char)); ???

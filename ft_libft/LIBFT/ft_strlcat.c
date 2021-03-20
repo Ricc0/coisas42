@@ -10,30 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
 ** Concatenates src to destination, writing size bytes at most.
 ** Returns initial length of dest plus length of src for truncation detection.
 */
-#include <stddef.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+
 #include "libft.h"
 
-
-char   ft_strlen(const char *n)
+char	ft_strlen(const char *n)
 {
-    int     cont;
- 
-    cont = 0;
-    while (n[cont] != '\0')
-    {
-        cont++;
-    }
-    return (cont);
+	int	cont;
+
+	cont = 0;
+	while (n[cont] != '\0')
+	{
+		cont++;
+	}
+	return (cont);
 }
- 
+
 size_t	ft_strlcat(char *dest, const char *src, size_t nb)
 {
 	size_t dest_leng;
@@ -41,7 +36,6 @@ size_t	ft_strlcat(char *dest, const char *src, size_t nb)
 
 	dest_leng = ft_strlen(dest);
 	i = 0;
-	
 	if (nb <= dest_leng)
 		return (nb + ft_strlen(src));
 	while (src[i] != '\0' && dest_leng + 1 < nb)
