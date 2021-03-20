@@ -20,26 +20,23 @@
 */
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *str1, char const *str2)
 {
-	char	*nova_string;
-	size_t	i;
-	size_t	j;
+	size_t	len_str1;
+	size_t	len_str2;
+	char	*new_str;
 
-	i = 0;
-	j = 0;
-	if (!s1 || !s2 ||
-		!(nova_string = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1)))
-		return (0);
-	while (s1[i] != '\0')
-	{
-		nova_string[i] = s1[i];
-		i++;
-	}
-	while (s2[j] != '\0')
-	{
-		nova_string[i++] = s2[j++];
-	}
-	nova_string = '\0';
-	return (nova_string);
+	if (!str1 || !str2)
+		return (NULL);
+	len_str1 = ft_strlen(str1);
+	len_str2 = ft_strlen(str2);
+	new_str = malloc(sizeof(char) * (len_str1 + len_str2 + 1));
+	if (new_str == NULL)
+		return (NULL);
+	while (*str1)
+		*(new_str++) = *(str1++);
+	while (*str2)
+		*(new_str++) = *(str2++);
+	*new_str = '\0';
+	return (new_str - (len_str1 + len_str2));
 }

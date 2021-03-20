@@ -13,20 +13,26 @@
 /*
 ** Returns last occurence of char c in string or NULL.
 */
-
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *str, int c)
 {
-	int			i;
-	const char	*ini;
+	char		caracter;
+	size_t		len;
 
-	ini = s;
-	i = ft_strlen(s);
-	s = (s + i);
-	while (*s != *ini && c != *s)
-		s--;
-	if (c == *s)
-		return ((char *)s);
-	return (0);
+	caracter = (char)c;
+	len = ft_strlen((char*)str);
+	while (len > 0)
+	{
+		if (*(str + len - 1) == c)
+			return ((char*)(str + len - 1));
+		else
+			--len;
+	}
+	if (caracter == '\0')
+	{
+		len = ft_strlen((char*)str);
+		return ((char*)(str + len));
+	}
+	return (NULL);
 }

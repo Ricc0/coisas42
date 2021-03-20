@@ -33,7 +33,7 @@
 
 size_t		ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	char			current_char;
+	char	current_char;
 	size_t	i;
 
 	if (src == 0)
