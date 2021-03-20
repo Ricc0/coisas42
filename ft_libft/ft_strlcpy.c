@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: henricco <henricco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:36:09 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 20:13:30 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/20 13:54:49 by henricco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,23 +31,10 @@
 
 #include "libft.h"
 
-int		ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
-	return (i);
-}
-
-int		ft_strlcpy(char *dest, const char *src, int size)
+size_t		ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	char			current_char;
-	unsigned int	i;
+	size_t	i;
 
 	if (src == 0)
 		return (0);

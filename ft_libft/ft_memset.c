@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: henricco <henricco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:17:03 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 18:14:18 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/20 13:37:07 by henricco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 void	*ft_memset(void *str, int c, size_t leng)
 {
-	int i;
+	size_t i;
 
 	i = 0;
 	while (i < leng)
@@ -29,4 +29,5 @@ void	*ft_memset(void *str, int c, size_t leng)
 		((char *)str)[i] = c;
 		i++;
 	}
+	return (str);
 }

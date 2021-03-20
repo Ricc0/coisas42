@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: henricco <henricco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:35:40 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 20:12:33 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/20 13:41:50 by henricco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,6 @@
 */
 
 #include "libft.h"
-
-char	ft_strlen(const char *n)
-{
-	int	cont;
-
-	cont = 0;
-	while (n[cont] != '\0')
-	{
-		cont++;
-	}
-	return (cont);
-}
 
 size_t	ft_strlcat(char *dest, const char *src, size_t nb)
 {

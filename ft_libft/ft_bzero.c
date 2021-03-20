@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: henricco <henricco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:09:48 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 18:13:23 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/20 13:30:55 by henricco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *str, size_t leng)
 {
-	int i;
+	size_t i;
 
 	i = 0;
 	while (i < leng)

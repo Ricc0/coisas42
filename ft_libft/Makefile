@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+         #
+#    By: henricco <henricco@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/19 17:37:09 by hdal-mol          #+#    #+#              #
-#    Updated: 2021/03/19 17:37:10 by hdal-mol         ###   ########.fr        #
+#    Updated: 2021/03/20 13:23:16 by henricco         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,17 +19,17 @@ SRC     =    *.c
 
 OBS    =    $(SRC:.c=.o)
 
-$(NAME):    $(OBS)    libft.h
-        $(CC)$(CFLAGS)   $(SRC)  -c
-        ar -rcs $(NAME) $(OBS)
+$(NAME):	$(OBS)	libft.h
+		$(CC)$(CFLAGS)	$(SRC)	-c
+		ar -rcs $(NAME) $(OBS)
 
 .PHONY: all clean fclean re
 
 all: $(NAME)
 
 clean:
-    rm -rf  $(OBS)
+	rm -rf  $(OBS)
 fclean: clean
-    rm -rf  $(NAME)
+	rm -rf  $(NAME)
 
 re:    fclean all

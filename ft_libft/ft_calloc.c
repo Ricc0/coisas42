@@ -3,26 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: henricco <henricco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:09:43 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 20:08:17 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/20 13:33:20 by henricco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	ft_bzero(void *str, size_t leng)
-{
-	int i;
-
-	i = 0;
-	while (i < leng)
-	{
-		((char *)str)[i] = '\0';
-		i++;
-	}
-}
 
 void	*ft_calloc(size_t times, size_t size)
 {

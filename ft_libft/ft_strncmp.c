@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: henricco <henricco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:38:24 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 20:14:49 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/20 13:46:31 by henricco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 int	ft_strncmp(char *s1, char *s2, size_t n)
 {
-	int i;
+	size_t i;
 
 	i = 0;
 	while ((s1[i] != '\0') && (s2[i] != '\0') && (s1[i] == s2[i]))
