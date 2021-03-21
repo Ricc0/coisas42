@@ -17,10 +17,10 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	char		caracter;
+	char		character;
 	size_t		len;
 
-	caracter = (char)c;
+	character = (char)c;
 	len = ft_strlen((char*)str);
 	while (len > 0)
 	{
@@ -29,7 +29,7 @@ char	*ft_strrchr(const char *str, int c)
 		else
 			--len;
 	}
-	if (caracter == '\0')
+	if (character == '\0')
 	{
 		len = ft_strlen((char*)str);
 		return ((char*)(str + len));

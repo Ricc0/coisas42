@@ -6,3 +6,79 @@ NULL = !FUNÇÃO
 
 
 	nova_string = (char *)malloc(tamanho_original); //= malloc((original_size) * sizeof(char)); ???
+
+DESCRIÇÃO DAS FUNÇÕES:
+
+ATOI: 
+transforma caracteres char/alfanumericos/ascii em inteiros
+1º while - enquanto tiver espaços em branco, desconsiderar e continuar o contador
+1º if - saber se é positivo,negativo, contar como um a mais e multiplicar no final
+2º while - enquanto tiver entre numeros 0-9, ficar contabilizando os numeros(res + o da string)
+return : o rest * se é positivo ou negtivo
+
+BZERO:
+ completa a string, ate o leng determinado, com o zero/vazio
+
+MEMSET:
+ completa a string, ate o leng determinado, com o byte q vc escolhe
+
+MEMCPY:
+ copia da fonte para o destino até que o tamanho desejado 
+
+ MEMCCPY:
+ copia da fonto para o destino, dentro de uma quantidade de caracterictes, e ate o caractere informado
+
+ MEMMOVE:
+ ele move os bytes da fonte para o destino, de tras pra fente ;
+ se o dest for maior do q fonte, ele vai continuar rodando de tras pra frente para nao subescrever o codigo 
+
+ MEMCHR:
+ a função vai procurar o primeiro caractere informado(dentro de um tamanho) e quando achar vai retornar a str + o local do caractere
+
+ MEMCMP:
+ compara dois ponteiros de  strings e retorna a primeira diferença encontrada;
+
+ STRLEN:
+ vai rodar a string ate o \0 e vai retornar o tamanho da string
+
+ STRLCPY: string lenght copy
+ ele copia até o tamanho especificado da fonte para o destino e depois coloca o '\0'
+
+
+ STRLCAT:
+ ** Concatenates src to destination, writing size bytes at most.
+ ** Returns initial length of dest plus length of src for truncation detection.
+
+ STRCHAR;
+ localiza o primeiro caractere correspondente e retorna a PRIMEIRA posição do ponteiro;
+
+ STRRCHR:
+ localiza a ultima caractere correspondente e retorna a ULTIMA posição do ponteiro
+
+ STRNSTR: string null string
+ ele encontra a primeira ocorrencia de palavra/char dentro de uma string dentro do lenght, os caracteres depois do '\0' não sao considerados
+
+ STRNCMP: string null comparação
+ ele compara caracter a caracter das strings 1 e 2 até o tamanho informado, os caracteres depois '\0' não são consideradas
+
+ CALLOC:
+ realiza a alocação na memoria e limpa/preenche ela com o 0 
+
+ STRDUP
+ cria uma nova string duplicada, com o espaço separado na memoria por causa do malloc
+
+ SUBSTR:
+ retorna uma nova string, com o espaço alocado na memoria, apartir do q foi determinado no start
+
+ STRJOIN:
+retorna uma nova string, q é a junção  da primeira com a segunda, com o espaço alocado na memoria
+
+STRTRIM:
+remove o set no inicio e no fim da string PEDIR AJUDA AAAAAAAAAA
+
+SLIPT:
+
+STRMAPI:
+
+
+

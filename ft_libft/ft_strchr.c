@@ -10,21 +10,31 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: locate character in string (first occurrence)
+**
+** DESCRIPTION:
+** 		The strchr() function locates the first occurrence of c (converted to a
+**	char) in the string pointed to by s.  The terminating null character is
+**	considered to be part of the string; therefore if c is `\0', the func-
+**	tions locate the terminating `\0'.
+*/
 #include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {
-	char		caracter;
+	char		character;
 
-	caracter = (char)c;
+	character = (char)c;
 	while (*str != '\0')
 	{
-		if (*str == caracter)
+		if (*str == character)
 			return ((char*)str);
 		else
 			++str;
 	}
-	if (caracter == '\0')
+	if (character == '\0')
 		return ((char*)str);
 	return (NULL);
 }
