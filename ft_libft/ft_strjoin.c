@@ -6,18 +6,10 @@
 /*   By: henricco <henricco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:35:03 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/20 13:41:36 by henricco         ###   ########.fr       */
+/*   Updated: 2021/03/21 11:25:01 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** LIBRARY: N/A
-** SYNOPSIS: concatenate two strings into a new string (with malloc)
-**
-** DESCRIPTION:
-** 		Allocates (with malloc(3)) and returns a new string, which is the
-**	result of the concatenation of ’s1’ and ’s2’.
-*/
 #include "libft.h"
 
 char	*ft_strjoin(char const *str1, char const *str2)

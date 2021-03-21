@@ -6,20 +6,9 @@
 /*   By: hdal-mol <hdal-mol@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 18:19:05 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/19 18:19:27 by hdal-mol         ###   ########.fr       */
+/*   Updated: 2021/03/21 11:22:49 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** LIBRARY: N/A
-** SYNOPSIS: split string, with specified character as delimiter, into an array
-**			of strings
-**
-** DESCRIPTION:
-** 		Allocates (with malloc(3)) and returns an array of strings obtained by
-**	splitting ’s’ using the character ’c’ as a delimiter. The array must be
-**	ended by a NULL pointer.
-*/
 
 #include "libft.h"
 

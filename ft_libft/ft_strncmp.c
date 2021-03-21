@@ -6,13 +6,10 @@
 /*   By: henricco <henricco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:38:24 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/20 13:46:31 by henricco         ###   ########.fr       */
+/*   Updated: 2021/03/21 11:28:31 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Compares strings s1 and s2 char-wise, returning the difference.
-*/
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

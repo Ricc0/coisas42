@@ -6,18 +6,9 @@
 /*   By: henricco <henricco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:42:10 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/20 13:43:16 by henricco         ###   ########.fr       */
+/*   Updated: 2021/03/21 11:29:48 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** LIBRARY: N/A
-** SYNOPSIS: extract substring from string
-**
-** DESCRIPTION:
-** 		Allocates (with malloc(3)) and returns a substring from the string ’s’.
-**	The substring begins at index ’start’ and is of maximum size ’len’.
-*/
 
 #include "libft.h"
 

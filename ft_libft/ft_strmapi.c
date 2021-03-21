@@ -6,18 +6,9 @@
 /*   By: henricco <henricco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 23:38:11 by hdal-mol          #+#    #+#             */
-/*   Updated: 2021/03/20 13:42:20 by henricco         ###   ########.fr       */
+/*   Updated: 2021/03/21 11:26:28 by hdal-mol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** LIBRARY: N/A
-** SYNOPSIS: create new string from modifying string with specified function
-**
-** DESCRIPTION:
-** 		Applies the function ’f’ to each character of the string ’s’ to create
-**	a new string (with malloc(3)) resulting from successive applications of ’f’.
-*/
 
 #include "libft.h"
 
